@@ -22,7 +22,7 @@ function Get-AppSettings {
         $VaultName,
         $Path,
         $delimiter = "%",
-        $Filter = 'appsettings.template.json',
+        $Filter = 'appsettings.json',
         $OutFileName = 'appsettings.json'
     )
 
