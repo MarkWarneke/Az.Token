@@ -25,7 +25,7 @@ Using the method `Get-AppSettings`, queries the given Azure KeyVault for the sec
 # Login to Azure Account
 Connect-AzAccount
 
-# Create appsettings.json based 
+# Create appsettings.dev.json based on appsettings.json
 Get-AppSettings -VaultName MyKeyVault -subscriptionId XXXXX | Out-File "appsettings.dev.json"
 ```
 
