@@ -1,6 +1,6 @@
 # Az.Token � 👩‍💻👨‍💻
 
-Creates `AppSettings.json` based on a tokenized template. Replaces `%TOKEN%` in `appsettings.template.*.json` with actual values from Azure KeyVault secrets that match `TOKEN`. ☁️
+Creates `AppSettings.json` based on a tokenized template. Replaces `%TOKEN%` in `appsettings.json` with actual values from Azure KeyVault secrets that match `TOKEN` to create  `appsettings.dev.json`. ☁️
 
 Will search recursively given `-Path` for files that match `-Filter`, by default it searches for `appsettings.json` files. The script queries all secrets inside a given Azure KeyVault by `-VaultName`. Replaces the found tokens matching `-delimiter` (e.g. `"%MYSQL_CONNECTION_STRING%"`) with the value from the Azure KeyVault secret with name `MYSQL_CONNECTION_STRING`.
 
