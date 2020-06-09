@@ -1,2 +1,2 @@
-# config
-*.Development.json
+# Generated appsettings
+*\**\appsettings.*.json
