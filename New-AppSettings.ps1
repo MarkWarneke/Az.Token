@@ -27,7 +27,7 @@ function Get-AppSettings {
     )
 
     begin {
-        $context = Set-AzContext $subscriptionId # eve
+        $context = Set-AzContext $subscriptionId
         Write-Verbose "Conntected to $($context.Name) $subscriptionId"
 
         $null = Get-AzKeyVault -VaultName $VaultName -ErrorAction Stop
