@@ -23,7 +23,7 @@ function Get-AppSettings {
         $Path,
         $delimiter = "%",
         $Filter = 'appsettings.json',
-        $OutFileName = 'appsettings.json'
+        $OutFileName = 'appsettings.dev.json'
     )
 
     begin {
