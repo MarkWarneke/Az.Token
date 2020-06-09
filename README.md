@@ -1,4 +1,4 @@
-# Az.Token � 👩‍💻👨‍💻
+# Az.Token 👩‍💻👨‍💻
 
 Creates `AppSettings.json` based on a tokenized template. Replaces `%TOKEN%` in `appsettings.json` with actual values from Azure KeyVault secrets that match `TOKEN` to create  `appsettings.dev.json`. ☁️
 
