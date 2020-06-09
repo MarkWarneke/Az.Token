@@ -2,7 +2,7 @@
 
 Creates `AppSettings.json` based on template, replaces `%TOKEN%` in `appsettings.template.*.json` with actual values from Azure KeyVault. ☁️
 
-Will search recursive given `-Path` using `-Filter` to search for a given template file. Replaces all found tokens that match `-delimiter` with value from key vault.
+Will search recursive given `-Path` using `-Filter` to search for a given template file, by default it will search for `appsettings.json` files. The script queries all secrets and replaces the found tokens that match `-delimiter` (e.g. `"%MYSQL_CONNECTION_STRING%"`) with the value from the Azure KeyVault secret.
 
 ## Example
 
