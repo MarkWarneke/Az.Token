@@ -44,5 +44,5 @@ Createa a file `appsettings.dev.json` containing the secret values from the Azur
 
 ## Usage ⚠️
 
-Create a `.gitignore` entry for `*\**\appsettings.*.json` and create an `appsettings.json` template using delimitered token that match the Azure KeyVault secret name. Run `Get-AppSettings` to create actual appsettings files that can be consumed in the code. Make sure to **NOT** check-in the new appsettings files, as credentials could be leaked.
+Create a `.gitignore` entry for `*\**\appsettings.*.json` and create an `appsettings.json` template using delimitered token that match the Azure KeyVault secret name. Run `Get-AppSettings` to create actual appsettings files that can be consumed in the code. Make sure to **NOT** check-in the new appsettings files, as credentials could be leaked - see [.gitignore](.gitignore) to avoid checking-in the created appsettings.
 
